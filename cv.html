@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Kirwa - CV</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.4; color: #333; }
+        h1, h2, h3 { color: #2c3e50; }
+        h1 { text-align: center; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        section { margin-bottom: 20px; }
+        ul { margin: 5px 0; padding-left: 20px; }
+        .contact { text-align: center; background: #ecf0f1; padding: 10px; border-radius: 5px; }
+        .skills { display: flex; flex-wrap: wrap; }
+        .skills ul { flex: 1; min-width: 200px; }
+    </style>
+</head>
+<body>
+    <h1>David Kabera Kirwa</h1>
+
+    <div class="contact">
+        <p>Phone: +36 20 580 1243 | Email: <a href="mailto:kirwakabera@outlook.com">kirwakabera@outlook.com</a> | GitHub: <a href="#">GitHub</a> | LinkedIn: <a href="#">LinkedIn</a></p>
+        <p>Debrecen, Hungary</p>
+    </div>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p>MSc Computer Science candidate at the University of Debrecen with an undergraduate foundation in telecommunications engineering. My work sits at the meeting point of theory and operations: MSc thesis research analysing the evolution and performance of stream ciphers, alongside hands-on experience running Kubernetes clusters, distributed training pipelines, and event-driven systems. I am interested in distributed systems research and in roles where correctness under failure matters as much as throughput.</p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <h3>Master of Science in Computer Science</h3>
+        <p><strong>University of Debrecen, Debrecen, Hungary</strong><br>
+        September 2024 &ndash; Expected completion June 2027</p>
+        <ul>
+            <li>Thesis: <em>The Evolution and Performance of Stream Ciphers</em> &mdash; a comparative analysis of Vernam, RC4, ChaCha20, Grain-128AEAD and the D&ouml;m&ouml;si&ndash;Horv&aacute;th automaton cipher, evaluated through an original Constraint-Principle Framework. Supervised by Dr. Horv&aacute;th G&eacute;za.</li>
+            <li>Relevant coursework: Advanced Architecture Patterns, Advanced Software Engineering, Database Systems and Applications, Distributed Systems, Automata Theory.</li>
+        </ul>
+
+        <h3>Bachelor of Science in Telecommunications and Information Engineering</h3>
+        <p><strong>Machakos University, Machakos, Kenya</strong></p>
+        <ul>
+            <li>Relevant coursework: Network Systems, Signal Processing, Wireless Communications.</li>
+            <li>Final project: an IoT-based fire detection system, covering sensor integration, alerting logic and field testing.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+
+        <h3>Customer Service Assistant</h3>
+        <p><strong>Bamburi Cement, Nairobi, Kenya</strong></p>
+        <ul>
+            <li>Recognised as Best Performer for April 2024 among a team of four agents, with an overall performance score of 91% &mdash; the highest in the chapter &mdash; across accessibility, productivity and quality metrics.</li>
+            <li>Handled client enquiries across inbound, outbound and social channels with an Average Speed of Answer of 4 seconds and an Average Handle Time of 2:09, while maintaining full schedule adherence.</li>
+            <li>Sustained a 95% Quality Assurance score and 100% CRM usage, reviewing customer feedback to identify recurring issues and support CRM rollout.</li>
+        </ul>
+
+        <h3>Intern, Multi-Media Services Department (Frequency Spectrum Management)</h3>
+        <p><strong>Communications Authority of Kenya, Nairobi, Kenya</strong></p>
+        <ul>
+            <li>Worked within the frequency spectrum management function, gaining practical exposure to multi-media licensing and the regulatory frameworks governing it.</li>
+            <li>Contributed to frequency coordination tasks, applying telecommunications knowledge to live regulatory cases and producing deliverables to deadline.</li>
+            <li>Received a written endorsement from the Director of Multi-Media Services for analytical ability and technical communication.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Key Skills</h2>
+        <div class="skills">
+            <ul>
+                <li><strong>Languages:</strong> Java, Python, C++, SQL, Bash</li>
+                <li><strong>Infrastructure:</strong> Kubernetes (Talos Linux), Docker, Linux administration, Redis, AWS fundamentals</li>
+            </ul>
+            <ul>
+                <li><strong>Distributed &amp; Event-Driven:</strong> Apache Kafka, KEDA, federated learning pipelines, consensus protocols</li>
+                <li><strong>Frameworks &amp; Tools:</strong> Spring Boot, Git, LikeC4, Astro, JIRA, Oracle SQL</li>
+            </ul>
+            <ul>
+                <li><strong>Engineering Practice:</strong> Architecture documentation (SRS to IEEE 830, ASRs, ADRs), performance benchmarking, technical writing</li>
+                <li><strong>Domains:</strong> Cryptography, network protocols, spectrum management</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+
+        <h3>Gillytech &mdash; Collaborative STEM Reasoning Platform</h3>
+        <p>A reasoning-first, real-time collaborative learning platform for Kenyan CBC classrooms, in which students must record their reasoning before answer options unlock, discuss in small groups, and submit against server-side scoring. Architected as a layered modular monolith (Express routes &rarr; auth middleware &rarr; repository layer &rarr; data store) with an in-process, session- and group-scoped WebSocket overlay for chat, presence and question-advance events. Ten architecturally significant requirements were derived from the SRS and mapped to the style, with trade-offs &mdash; single-process scaling, non-transactional first-correct awards, read-time analytics &mdash; each recorded against an explicit revisit trigger across six ADRs. Documentation published at <a href="https://davidkabera.github.io/gilli-tech/" target="_blank">davidkabera.github.io/gilli-tech</a>.</p>
+
+        <h3>Talos Kubernetes Cluster &amp; Distributed ML Training</h3>
+        <p>Built and operated a multi-node Kubernetes cluster on Talos Linux, working through provisioner selection, version compatibility and multi-context management. Deployed a federated learning pipeline on it for MNIST image classification, using parallel training worker pods, Redis-based gradient coordination, shared persistent storage, and a federated-averaging aggregation job.</p>
+
+        <h3>MundaMail &mdash; Government Messaging System</h3>
+        <p>Designed a government email platform as an Advanced Software Engineering semester project. Produced a full IEEE 830 software requirements specification, architecturally significant requirements, architecture decision records, and a C1&ndash;C4 LikeC4 model of a modular monolith with a Kafka event broker and tiered audit persistence. Documentation published as an Astro/Starlight site on GitHub Pages.</p>
+
+        <h3>Stream Cipher Performance Analysis</h3>
+        <p>MSc thesis work benchmarking five stream ciphers spanning a century of design, from the one-time pad through modern lightweight AEAD constructions, and structuring the comparison around an original framework relating design constraints to security and performance outcomes.</p>
+
+        <h3>IoT Fire Detection System</h3>
+        <p>Undergraduate final project: a sensor-based fire detection and alerting system, covering hardware integration and response logic.</p>
+    </section>
+
+    <section>
+        <h2>Research Interests</h2>
+        <ul>
+            <li>Byzantine fault tolerance and consensus safety/liveness under orchestration-induced failure</li>
+            <li>Symmetric cryptography: lightweight and automaton-based cipher design</li>
+            <li>Kubernetes-native orchestration of distributed and blockchain workloads</li>
+        </ul>
+        <p>Currently developing a doctoral research direction on how Kubernetes-native orchestration affects the safety and liveness properties of QBFT consensus in private Ethereum networks.</p>
+    </section>
+
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>Cisco Certified Network Associate (CCNA)</li>
+            <li>AWS Certified Cloud Practitioner</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Languages</h2>
+        <ul>
+            <li>English: Fluent (written and spoken)</li>
+            <li>Swahili: Native</li>
+            <li>Hungarian: Basic conversational</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>References</h2>
+        <ul>
+            <li>Dr. Horv&aacute;th G&eacute;za, Thesis Supervisor, University of Debrecen</li>
+            <li>Eng. Leo K. Burrett, Director, Multi-Media Services, Communications Authority of Kenya</li>
+        </ul>
+        <p>Contact details available on request.</p>
+    </section>
+</body>
+</html>

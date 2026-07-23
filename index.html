@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>David Kabera|Portfolio</title>
+        <style>
+        /*General Styling*/
+        body{
+            font-family: Arial,sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header{
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1{
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p{
+            margin: 10px 0 20px;
+            font-size: 1.2em;
+        }
+
+        header nav a{
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        header nav a:hover{
+            text-decoration: underline;
+        }
+
+        /*Section Styling*/
+        section{
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section h2{
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /*Project Styling*/
+        .project{
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .project h3{
+            margin-top: 0;
+        }
+
+        .project a{
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project a:hover{
+            text-decoration: underline;
+        }
+
+        /*Contact Styling*/
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li{
+            margin-bottom: 10px;
+        }
+
+        ul li a{
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        ul li a:hover{
+            text-decoration: underline;
+        }
+
+        /*Footer Styling*/
+        footer{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /*Responsive Design*/
+
+        @media
+        (max-width:768px){
+            header h1{
+                font-size: 2em;
+            }
+
+            header p{
+                font-size: 1em;
+            }
+
+            header nav a{
+                display: block;
+                margin: 10px 0;
+            }
+
+            section{
+                padding: 40px 15px;
+            }
+
+            section h2{
+                font-size: 1.8em;
+            }
+        }
+
+        @media
+        (max-width: 480px){
+            header h1{
+                font-size: 1.8em;
+            }
+
+            header p{
+                font-size: 0.9em;
+            }
+
+            section h2{
+                font-size: 1.5em;
+            }
+
+            .project{
+                padding: 10px;
+            }
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <!--Header Section-->
+        <header>
+            <h1>David Kabera Kirwa</h1>
+            <p>Telecoms | Computer Scientist | Programmer</p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!--About Section-->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am David Kabera, an MSc Computer Science candidate at the University of Debrecen with a
+                 background in telecommunications engineering. I work across cryptography research and distributed
+                 systems &mdash; stream cipher analysis on one side, Kubernetes and event-driven architecture on the other.
+                 My heart is in writing code.</p>
+
+            <p>Click to view my detailed <a href="cv.html" target="_blank">CV</a></p>
+        </section>
+
+        <!--Project Section-->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Gillytech</h3>
+                <p>A reasoning-first, real-time collaborative STEM platform for Kenyan CBC classrooms. Students write their reasoning before answer options unlock, discuss in groups over WebSockets, and submit against server-side scoring. Built as a layered modular monolith with an event-driven real-time overlay, documented through ten ASRs and six ADRs.</p>
+                <a href="https://davidkabera.github.io/gilli-tech/" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Talos Kubernetes Cluster &amp; Federated Learning</h3>
+                <p>A multi-node Kubernetes cluster on Talos Linux, running a federated learning pipeline for MNIST image classification with parallel training workers, Redis-based gradient coordination, shared persistent storage, and a federated-averaging aggregation job.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>MundaMail &mdash; Government Messaging System</h3>
+                <p>A government email platform designed from requirements upward: an IEEE 830 SRS, architecturally significant requirements, architecture decision records, and a C1&ndash;C4 LikeC4 model of a modular monolith with a Kafka event broker and tiered audit persistence.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Stream Cipher Performance Analysis</h3>
+                <p>MSc thesis research benchmarking five stream ciphers across a century of design &mdash; Vernam, RC4, ChaCha20, Grain-128AEAD and the D&ouml;m&ouml;si&ndash;Horv&aacute;th automaton cipher &mdash; through an original Constraint-Principle Framework.</p>
+                <a href="cv.html" target="_blank">Read More</a>
+            </div>
+        </section>
+
+        <!--Contact Section-->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to reach out, feel free to reach out through any of the following platforms:</p>
+            <ul>
+                <li>Email:<a href="mailto:kirwakabera@outlook.com">kirwakabera@outlook.com</a></li>
+                <li>LinkedIn:<a href=""target="_blank">My LinkedIn profile</a></li>
+                <li>Github:<a href="" target="_blank">My GitHub profile</a></li>
+            </ul>
+        </section>
+
+        <!--Footer Section-->
+        <footer>
+            <p>©2025 David Kabera Kirwa. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
